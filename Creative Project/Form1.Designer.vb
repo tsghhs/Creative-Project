@@ -22,6 +22,7 @@ Partial Class frmPizzaMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPizzaMenu))
         Me.lblCreate = New System.Windows.Forms.Label()
         Me.grpSauces = New System.Windows.Forms.GroupBox()
         Me.radAlfredo = New System.Windows.Forms.RadioButton()
@@ -75,6 +76,11 @@ Partial Class frmPizzaMenu
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnCoupon = New System.Windows.Forms.Button()
         Me.lblDiscount = New System.Windows.Forms.Label()
+        Me.pbPizza = New System.Windows.Forms.PictureBox()
+        Me.pbMushroom1 = New System.Windows.Forms.PictureBox()
+        Me.pbMushroom2 = New System.Windows.Forms.PictureBox()
+        Me.pbMushroom3 = New System.Windows.Forms.PictureBox()
+        Me.pbMushroom4 = New System.Windows.Forms.PictureBox()
         Me.grpSauces.SuspendLayout()
         Me.grpVeggie.SuspendLayout()
         Me.grpToppings.SuspendLayout()
@@ -86,6 +92,11 @@ Partial Class frmPizzaMenu
         Me.grpSeasonings.SuspendLayout()
         Me.grpDelivery.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.pbPizza, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMushroom1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMushroom2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMushroom3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMushroom4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCreate
@@ -691,7 +702,7 @@ Partial Class frmPizzaMenu
         Me.btnPlaceorder.BackColor = System.Drawing.Color.Silver
         Me.btnPlaceorder.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPlaceorder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnPlaceorder.Location = New System.Drawing.Point(331, 508)
+        Me.btnPlaceorder.Location = New System.Drawing.Point(331, 584)
         Me.btnPlaceorder.Name = "btnPlaceorder"
         Me.btnPlaceorder.Size = New System.Drawing.Size(282, 53)
         Me.btnPlaceorder.TabIndex = 9
@@ -805,6 +816,66 @@ Partial Class frmPizzaMenu
         Me.lblDiscount.Size = New System.Drawing.Size(0, 25)
         Me.lblDiscount.TabIndex = 16
         '
+        'pbPizza
+        '
+        Me.pbPizza.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pbPizza.BackColor = System.Drawing.Color.Transparent
+        Me.pbPizza.BackgroundImage = Global.Creative_Project.My.Resources.Resources.PizzaCrust
+        Me.pbPizza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbPizza.Location = New System.Drawing.Point(331, 424)
+        Me.pbPizza.Name = "pbPizza"
+        Me.pbPizza.Size = New System.Drawing.Size(282, 137)
+        Me.pbPizza.TabIndex = 17
+        Me.pbPizza.TabStop = False
+        '
+        'pbMushroom1
+        '
+        Me.pbMushroom1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pbMushroom1.BackColor = System.Drawing.Color.Transparent
+        Me.pbMushroom1.BackgroundImage = CType(resources.GetObject("pbMushroom1.BackgroundImage"), System.Drawing.Image)
+        Me.pbMushroom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMushroom1.Location = New System.Drawing.Point(433, 456)
+        Me.pbMushroom1.Name = "pbMushroom1"
+        Me.pbMushroom1.Size = New System.Drawing.Size(18, 18)
+        Me.pbMushroom1.TabIndex = 18
+        Me.pbMushroom1.TabStop = False
+        '
+        'pbMushroom2
+        '
+        Me.pbMushroom2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pbMushroom2.BackColor = System.Drawing.Color.Transparent
+        Me.pbMushroom2.BackgroundImage = CType(resources.GetObject("pbMushroom2.BackgroundImage"), System.Drawing.Image)
+        Me.pbMushroom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMushroom2.Location = New System.Drawing.Point(489, 456)
+        Me.pbMushroom2.Name = "pbMushroom2"
+        Me.pbMushroom2.Size = New System.Drawing.Size(18, 18)
+        Me.pbMushroom2.TabIndex = 18
+        Me.pbMushroom2.TabStop = False
+        '
+        'pbMushroom3
+        '
+        Me.pbMushroom3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pbMushroom3.BackColor = System.Drawing.Color.Transparent
+        Me.pbMushroom3.BackgroundImage = CType(resources.GetObject("pbMushroom3.BackgroundImage"), System.Drawing.Image)
+        Me.pbMushroom3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMushroom3.Location = New System.Drawing.Point(433, 502)
+        Me.pbMushroom3.Name = "pbMushroom3"
+        Me.pbMushroom3.Size = New System.Drawing.Size(18, 18)
+        Me.pbMushroom3.TabIndex = 18
+        Me.pbMushroom3.TabStop = False
+        '
+        'pbMushroom4
+        '
+        Me.pbMushroom4.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pbMushroom4.BackColor = System.Drawing.Color.Transparent
+        Me.pbMushroom4.BackgroundImage = CType(resources.GetObject("pbMushroom4.BackgroundImage"), System.Drawing.Image)
+        Me.pbMushroom4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMushroom4.Location = New System.Drawing.Point(489, 502)
+        Me.pbMushroom4.Name = "pbMushroom4"
+        Me.pbMushroom4.Size = New System.Drawing.Size(18, 18)
+        Me.pbMushroom4.TabIndex = 18
+        Me.pbMushroom4.TabStop = False
+        '
         'frmPizzaMenu
         '
         Me.AcceptButton = Me.btnPlaceorder
@@ -815,6 +886,11 @@ Partial Class frmPizzaMenu
         Me.BackgroundImage = Global.Creative_Project.My.Resources.Resources.pizzeria_Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(946, 675)
+        Me.Controls.Add(Me.pbMushroom4)
+        Me.Controls.Add(Me.pbMushroom2)
+        Me.Controls.Add(Me.pbMushroom3)
+        Me.Controls.Add(Me.pbMushroom1)
+        Me.Controls.Add(Me.pbPizza)
         Me.Controls.Add(Me.lblDiscount)
         Me.Controls.Add(Me.btnCoupon)
         Me.Controls.Add(Me.lblTotal)
@@ -859,6 +935,11 @@ Partial Class frmPizzaMenu
         Me.grpDelivery.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.pbPizza, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMushroom1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMushroom2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMushroom3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMushroom4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -917,4 +998,9 @@ Partial Class frmPizzaMenu
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCoupon As Button
     Friend WithEvents lblDiscount As Label
+    Friend WithEvents pbPizza As PictureBox
+    Friend WithEvents pbMushroom1 As PictureBox
+    Friend WithEvents pbMushroom2 As PictureBox
+    Friend WithEvents pbMushroom3 As PictureBox
+    Friend WithEvents pbMushroom4 As PictureBox
 End Class

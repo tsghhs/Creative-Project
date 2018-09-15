@@ -63,9 +63,19 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property PizzaPlanet_SizeGuide_New_min() As System.Drawing.Bitmap
+        Friend ReadOnly Property Mushroom() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("PizzaPlanet_SizeGuide_New_min", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Mushroom", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property PizzaCrust() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("PizzaCrust", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -76,16 +86,6 @@ Namespace My.Resources
         Friend ReadOnly Property pizzeria_Background() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pizzeria_Background", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property wood_building_construction_129731() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("wood_building_construction_129731", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

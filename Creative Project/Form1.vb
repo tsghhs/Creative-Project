@@ -33,6 +33,10 @@
 
     Private Sub chkMushrooms_CheckedChanged(sender As Object, e As EventArgs) Handles chkMushrooms.CheckedChanged
         If sender.Checked Then totalPrice += 0.5 Else totalPrice -= 0.5
+        pbMushroom1.Visible = sender.Checked
+        pbMushroom2.Visible = sender.Checked
+        pbMushroom3.Visible = sender.Checked
+        pbMushroom4.Visible = sender.Checked
         lblTotal.Text = "Total: " & FormatCurrency(totalPrice * (100 - discount) / 100, 2)
     End Sub
 

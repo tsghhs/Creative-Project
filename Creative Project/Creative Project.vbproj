@@ -126,6 +126,9 @@
     <None Include="Resources\wood-building-construction-129731.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\PizzaCrust.jpg" />
+    <None Include="Resources\Mushroom.jpg" />
+    <None Include="Resources\PizzaCrust.PNG" />
     <Content Include="Resources\PizzaPlanet_SizeGuide-New-min.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
